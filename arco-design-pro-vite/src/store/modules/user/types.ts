@@ -15,5 +15,5 @@ export interface UserState {
   registrationDate?: string;
   accountId?: string;
   certification?: number;
-  role: RoleType;
+  role: RoleType[];
 }

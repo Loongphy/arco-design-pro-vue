@@ -14,7 +14,7 @@ setupMock({
     // 用户信息
     Mock.mock(new RegExp('/api/user/info'), () => {
       if (isLogin()) {
-        const role = window.localStorage.getItem('userRole') || 'admin';
+        const role = window.localStorage.getItem('userRole') || ['admin'];
         return successResponseWrap({
           name: '王立群',
           avatar:
